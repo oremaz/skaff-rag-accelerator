@@ -1,10 +1,9 @@
 LLMConfig: &LLMConfig
-  source: AzureChatOpenAI
+  source: ChatGoogleGenerativeAI
   source_config:
-    openai_api_type: azure
-    openai_api_key: {{ OPENAI_API_KEY }}
-    openai_api_base: https://genai-ds.openai.azure.com/openai/deployments/gpt4
-    openai_api_version: 2023-07-01-preview
+    api_key: {{ GEMINI_API_KEY }}
+    api_type: google
+    model: gemini-2.0-flash
     temperature: 0.1
 
 VectorStoreConfig: &VectorStoreConfig

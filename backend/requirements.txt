@@ -18,6 +18,8 @@ python-multipart
 sse_starlette
 docdantic
 openai
+httpx==0.27.2
+langchain-google-genai
 
 sentence-transformers
 chromadb
